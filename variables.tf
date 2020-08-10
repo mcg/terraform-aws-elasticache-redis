@@ -89,6 +89,12 @@ variable "engine_version" {
   description = "Redis engine version"
 }
 
+variable "auto_minor_version_upgrade" {
+  type        = bool
+  default     = true
+  description = "Enable minor version upgrades"
+}
+
 variable "at_rest_encryption_enabled" {
   type        = bool
   default     = false
